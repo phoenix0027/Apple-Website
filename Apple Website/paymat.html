@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Bill</title>
+        <style>
+            body{
+                background-color: darkkhaki;
+            }
+            table{
+                background-color: burlywood;
+                padding: 50px;
+                margin: auto auto;
+                margin-top: 50px;
+                border: 2px solid black;
+                box-shadow: -20px -20px 3px black;
+            }
+            .b{
+                padding-left: 150px;
+            }
+            .c{
+                padding-bottom: 20px;
+            }
+            .a,.b,.c{
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            .a,.b{
+                font-weight: bold;
+            }
+            hr{
+                background-color: black;
+                border: none;
+                height: 2px;
+            }
+            .button{
+                margin-right: 50px;
+                margin-left: 30px;
+                background-color: black;
+                color: snow;
+                border: 3px rosybrown solid;
+                height: 30px;
+                width: 100px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <table style="width: 500px;">
+            <tr>
+                <td class="a" style="font-size: x-large;padding-bottom: 20px;font-weight: bold;"><label>Billing Address</label></td>
+                <td class="b" style="font-size: x-large;padding-bottom: 20px;font-weight: bold;"><label>Pymat</label></td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 20px;"><hr><hr style="background-color: black; border: none;height: 5px;"><hr></td>
+                <td style="padding-bottom: 20px;"><hr><hr style="background-color: black; border: none;height: 5px;"><hr></td>
+            </tr>
+            <tr>
+                <td class="a"><i style="font-size:24px" class="fa">&#xf007</i><label>Full Name</label></td>
+                <td class="b"><label>Accepted Card</label></td>
+            </tr>
+            <tr>
+                <td class="c"><input id="numb" required></td>
+                <td class="b">
+                    <i style="font-size:24px" class="fa">&#xf09d</i>
+                    <i style="font-size:24px" class="fa">&#xf1f0</i>
+                    <i style="font-size:24px" class="fa">&#xf1f4</i>
+                    <i style="font-size:24px" class="fa">&#xf1f2</i>
+                </td>
+            </tr>
+            <tr>
+                <td><hr></td><td><hr></td>
+            </tr>
+            <tr>
+                <td class="a"><i style="font-size:24px" class="fa">&#xf0e0</i><label>Email</label></td>
+                <td class="b"><label>Name on Card</label></td>
+            </tr>
+            <tr>
+                <td class="c"><input type="email" required></td>
+                <td class="b"><input type="text" required></td>
+            </tr>
+            <tr>
+                <td><hr></td><td><hr></td>
+            </tr>
+            <tr>
+                <td class="a"><i style="font-size:24px" class="fa">&#xf2bc</i><label>Address</label></td>
+                <td class="b"><label>Credit card number</label></td>
+            </tr>
+            <tr>
+                <td class="c"><textarea rows="5" cols="21" required></textarea></td>
+                <td class="b"><input type="number" required></td>
+            </tr>
+            <tr><td><hr></td><td><hr></td></tr>
+            <tr><td class="a"><i style="font-size:24px" class="fa">&#xf098</i><label>Phone No.</label></td></tr>
+            <tr><td class="c"><input type="number" required></td></tr>
+            <tr><td><hr></td></tr>
+            <tr><td class="a"><label>Country</label></td></tr>
+            <tr>
+                <td class="c">
+                    <input list="country" required>
+                    <datalist id="country">
+                        <option>Australia</option>
+                        <option>India</option>
+                        <option>New Zealand</option>
+                        <option>United States</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr><td><hr></td></tr>
+            <tr><td class="a"><label>State</label></td></tr>
+            <tr>
+                <td class="c">
+                    <input list="stat" required>
+                    <datalist id="stat">
+                        <option>New South Wales</option>
+                        <option>Victoria</option>
+                        <option>Gujarat</option>
+                        <option>Maharashtra</option>
+                        <option>Nelson</option>
+                        <option>Auckland</option>
+                        <option>Washington</option>
+                        <option>New Jersey</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr><td><hr></td></tr>
+            <tr><td class="a"><label>City</label></td></tr>
+            <tr>
+                <td class="c">
+                    <input list="city" required>
+                    <datalist id="city">
+                        <option>Sydney</option>
+                        <option>Lithgow</option>
+                        <option>Melbourne</option>
+                        <option>Geelong</option>
+                        <option>Gandhinagar</option>
+                        <option>Rajkot</option>
+                        <option>Mumbai</option>
+                        <option>Pune</option>
+                        <option>Annesbrook</option>
+                        <option>Enner Glynn</option>
+                        <option>Papakura</option>
+                        <option>New Lynn</option>
+                        <option>Olympia</option>
+                        <option>Seattle</option>
+                        <option>Princeton</option>
+                        <option>Newark</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr><td><hr></td></tr>
+            <tr><td><input type="submit" class="button"><input type="reset" class="button"></td></tr>
+            <tr><td><hr></td></tr>
+        </table>
+        </form>
+    </body>
+</html>
