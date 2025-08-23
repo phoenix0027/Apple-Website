@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Product</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<body>
+    <header>Apple Clone – Buy Page</header>
+
+    <div class="container">
+        <h2>Buy Your Product</h2>
+
+        <label>Select Product</label>
+        <select id="product">
+            <option value="iPhone 15 Pro" data-price="119900">iPhone 15 Pro – ₹1,19,900</option>
+            <option value="iPhone 15 Pro Max" data-price="139900">iPhone 15 Pro Max – ₹1,39,900</option>
+            <option value="MacBook Air M2" data-price="109900">MacBook Air M2 – ₹1,09,900</option>
+            <option value="AirPods Pro 2" data-price="24900">AirPods Pro (2nd Gen) – ₹24,900</option>
+        </select>
+        <button type="button" onclick="addToCart()">Add to Bag</button>
+
+        <div id="cart">
+            <h3>Your Bag</h3>
+            <div id="cartItems"></div>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+        <form id="buyForm" style="display:none;">
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Address</label>
+            <textarea id="address" rows="3" required></textarea>
+
+            <label>Payment Method</label>
+            <select id="payment">
+                <option value="Credit Card">Credit Card</option>
+                <option value="UPI">UPI</option>
+                <option value="Net Banking">Net Banking</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+
+            <button type="submit">Generate Bill</button>
+        </form>
+
+        <div id="bill">
+            <h3>Bill Receipt</h3>
+            <div id="billProducts"></div>
+            <div class="line"><span>Customer</span><span id="billName"></span></div>
+            <div class="line"><span>Email</span><span id="billEmail"></span></div>
+            <div class="line"><span>Address</span><span id="billAddress"></span></div>
+            <div class="line"><span>Payment</span><span id="billPayment"></span></div>
+            <div class="line total"><span>Total</span><span id="billTotal"></span></div>
+        </div>
+    </div>
+</body>
+<script src="card.js"></script>
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>MacBook Air 13" M2</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #000;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #f5f5f5;
+            }
+
+            #head {
+                padding: 40px;
+                font-size: x-large;
+                text-align: center;
+                background: #000;
+                color: rosybrown;
+                letter-spacing: 1px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            }
+
+            #video video {
+                display: block;
+                margin: 30px auto;
+                border-radius: 12px;
+                border: 3px solid rosybrown;
+                box-shadow: 0 0 25px rgba(188,143,143,0.5);
+            }
+
+            #img img {
+                height: 450px;
+                width: 500px;
+                border: 4px solid rosybrown;
+                border-radius: 12px;
+                margin: 150px 50px;
+                box-shadow: 0 0 20px rgba(188,143,143,0.5);
+                transition: transform 0.3s ease;
+            }
+
+            #img img:hover {
+                transform: scale(1.05);
+            }
+
+            #details {
+                margin-top: 150px;
+                margin-left: 100px;
+                font-size: 18px;
+                line-height: 1.8;
+                color: #ddd;
+            }
+
+            #details h1 {
+                color: rosybrown;
+                margin-top: 20px;
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            #details span {
+                color: rosybrown;
+                font-weight: bold;
+            }
+
+            .buy-btn {
+                display: inline-block;
+                margin-top: 30px;
+                padding: 5px 20px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #000;
+                background: rosybrown;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-decoration: none;
+            }
+
+            .buy-btn:hover {
+                background: #d19c9c;
+                box-shadow: 0 0 15px rgba(188,143,143,0.8);
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <h1 style="text-align: center;">MacBook Air 13" with M2 Chip</h1>
+        </div>
+        <div id="video">
+            <video src="/Frontend/videos/M2Air.mp4" muted autoplay preload="auto" width="1305px"></video>
+        </div>
+        <div style="display: flex;">
+            <div id="img">
+                <img src="/Frontend/images/mac/macbook/air13M2/1.jpeg">
+            </div>
+            <div id="details">
+                Apple M2 chip with 8-core CPU, 8-core GPU, 16-core Neural Engine<br><br>
+                8GB unified memory<br><br>
+                256GB SSD storage<br><br>
+                34.46 cm (13.6-inch) Liquid Retina display with True Tone<sup>3</sup><br><br>
+                1080p FaceTime HD camera<br><br>
+                MagSafe 3 charging port<br><br>
+                Two Thunderbolt / USB 4 ports<br><br>
+                30W USB-C Power Adapter<br><br>
+                Backlit Magic Keyboard with Touch ID - US English<br><br>
+                <span style="font-size: x-large;">1.24 kg (2.7 lb.)</span><br>
+                Weight<br><br>
+                <h1>&#8377 114900.00</h1>
+
+                <a href="/Frontend/card/card.html" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </body>
+</html>

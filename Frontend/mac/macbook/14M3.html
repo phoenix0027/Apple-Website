@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background: #000;
+                color: #f5f5f5;
+                font-family: Arial, sans-serif;
+            }
+            #head{
+                padding: 50px;
+                font-size: x-large;
+                text-align: center;
+                color: rosybrown;
+            }
+            #img img{
+                height: 400px;
+                width: 500px;
+                border: 5px solid rosybrown;
+                margin: 150px 50px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(188,143,143,0.6);
+            }
+            #details{
+                margin-top: 180px;
+                margin-left: 150px;
+                line-height: 1.8;
+            }
+            #details h1 {
+                margin-top: 20px;
+                color: rosybrown;
+            }
+            .buy-btn {
+                display: inline-block;
+                margin-top: 25px;
+                padding: 5px 20px;
+                background: rosybrown;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+                border: none;
+                border-radius: 8px;
+                text-decoration: none;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .buy-btn:hover {
+                background: #d19c9c;
+                transform: scale(1.05);
+                box-shadow: 0 0 10px rgba(188,143,143,0.8);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <h1>MacBook Pro 14" with M3 Chip</h1>
+        </div>
+        <div id="video">
+            <video src="/Frontend/videos/MacPro.mp4" muted autoplay preload="auto" width="1305px"></video>
+        </div>
+        <div style="display: flex;">
+            <div id="img">
+                <img src="/Frontend/images/mac/macbook/pro14M3/2.webp">
+            </div>
+            <div id="details">
+                Apple M3 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine<br><br>
+                8GB unified memory<br><br>
+                512GB SSD storage<br><br>
+                35.97 cm (14.2-inch) Liquid Retina XDR display<sup>2</sup><br><br>
+                70W USB-C Power Adapter<br><br>
+                Two Thunderbolt / USB 4 ports, HDMI port, SDXC card slot, headphone jack,<br>
+                MagSafe 3 port<br><br>
+                Backlit Magic Keyboard with Touch ID - US English<br><br>
+                <span style="font-size: x-large;">1.55 kg (3.41 lb.)</span><br>
+                Weight<br><br>
+                <h1>&#8377 169900.00</h1>
+                
+                <a href="/Frontend/card/card.html" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </body>
+</html>

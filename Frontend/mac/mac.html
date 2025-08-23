@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mac</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #e0e0e0;
+        }
+
+        .mac {
+            height: 120px;
+            background: linear-gradient(90deg, #111, #1c1c1c);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .mac h1 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .mac h6 {
+            font-size: 16px;
+            font-weight: 300;
+            color: #bbb;
+        }
+
+        /* Navigation */
+        .nav {
+            margin: 30px 50px;
+        }
+
+        .nav span {
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .nav span:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Product Section */
+        .l_n {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            margin: 60px 0 20px;
+            color: #fff;
+        }
+
+        .l_p {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .l_p img {
+            height: 250px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .l_p img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .l_price {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffd369;
+            margin-top: 20px;
+        }
+
+        .l_d {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .l_d a {
+            color: #66c2ff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .l_d a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .button {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .button input {
+            background: linear-gradient(135deg, #222, #333);
+            color: #fff;
+            height: 40px;
+            width: 120px;
+            font-size: 16px;
+            border: 2px solid #555;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button input:hover {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+
+        /* Video */
+        .video {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        video {
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#1').css({ 'background-color': 'white', 'color': 'black' });
+            $('#des').hide();
+            $('#dis').hide();
+            $('#1').click(function () {
+                $('#macc').show();
+                $('#des').hide();
+                $('#dis').hide();
+                $('#1').css({ "background-color": "white", 'color': 'black' });
+                $('#2').css({ "background-color": "#1a1a1a", 'color': '#e0e0e0' });
+                $('#3').css({ "background-color": "#1a1a1a", 'color': '#e0e0e0' });
+            })
+            $('#2').click(function () {
+                $('#macc').hide();
+                $('#dis').hide();
+                $('#des').show();
+                $('#2').css({ "background-color": "white", 'color': 'black' });
+                $('#1').css({ "background-color": "#1a1a1a", 'color': '#e0e0e0' });
+                $('#3').css({ "background-color": "#1a1a1a", 'color': '#e0e0e0' });
+            })
+            $('#3').click(function () {
+                $('#macc').hide();
+                $('#des').hide();
+                $('#dis').show();
+                $('#3').css({ "background-color": "white", 'color': 'black' });
+                $('#2').css({ "background-color": "#1a1a1a", 'color': '#e0e0e0' });
+                $('#1').css({ "background-color": "#1a1a1a", 'color': '#e0e0e0' });
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="mac">
+        <h1>Mac</h1>
+        <h6>If you can dream it, Mac can do it.</h6>
+    </div>
+
+    <div class="nav">
+        <span id="1">Mac</span>
+        <span id="2">Desktops</span>
+        <span id="3">Display</span>
+    </div>
+
+    <div id="macc">
+        <div class="video">
+            <video src="../videos/mac.mp4" loop muted preload="auto" autoplay width="80%"></video>
+        </div>
+
+        <div class="l_n">MacBook Air 13" (M1)</div>
+        <div class="l_p">
+            <img src="../images/mac/macbook/air13M1/1.jpeg">
+            <img src="../images/mac/macbook/air13M1/2.jpg">
+            <img src="../images/mac/macbook/air13M1/3.webp">
+        </div>
+        <div class="l_price">&#8377; 99,900</div>
+        <div class="l_d"><a href="./macbook/13M1.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+
+        <div class="l_n">MacBook Air 13" (M2)</div>
+        <div class="l_p">
+            <img src="../images/mac/macbook/air13M2/1.jpeg">
+            <img src="../images/mac/macbook/air13M2/2.jpeg">
+            <img src="../images/mac/macbook/air13M2/3.png">
+        </div>
+        <div class="l_price">&#8377; 114,900</div>
+        <div class="l_d"><a href="./macbook/13M2.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+
+        <div class="l_n">MacBook Pro 14" (M3)</div>
+        <div class="l_p">
+            <img src="../images/mac/macbook/pro14M3/1.jpg">
+            <img src="../images/mac/macbook/pro14M3/2.webp">
+        </div>
+        <div class="l_price">&#8377; 169,900</div>
+        <div class="l_d"><a href="./macbook/14M3.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+
+        <div class="l_n">MacBook Pro 16" (M3 Pro)</div>
+        <div class="l_p">
+            <img src="../images/mac/macbook/pro16M3/1.jpeg">
+            <img src="../images/mac/macbook/pro16M3/2.webp">
+            <img src="../images/mac/macbook/pro16M3/3.webp">
+        </div>
+        <div class="l_price">&#8377; 249,900</div>
+        <div class="l_d"><a href="./macbook/16M3.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+    </div>
+
+    <div id="des">
+        <div class="l_n">iMac</div>
+        <div class="l_p">
+            <img src="../images/mac/desktop/imac/1.jpg">
+            <img src="../images/mac/desktop/imac/2.jpg">
+            <img src="../images/mac/desktop/imac/3.webp">
+        </div>
+        <div class="l_price">&#8377; 134,900</div>
+        <div class="l_d"><a href="./desktop/iMac.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+
+        <div class="l_n">Mac mini</div>
+        <div class="l_p">
+            <img src="../images/mac/desktop/mini/1.jpeg">
+            <img src="../images/mac/desktop/mini/2.jpg">
+        </div>
+        <div class="l_price">&#8377; 129,900</div>
+        <div class="l_d"><a href="./desktop/macmini.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+
+        <div class="l_n">Mac Pro</div>
+        <div class="l_p">
+            <img src="../images/mac/desktop/pro/1.jpg">
+            <img src="../images/mac/desktop/pro/2.jpg">
+            <img src="../images/mac/desktop/pro/3.webp">
+        </div>
+        <div class="l_price">&#8377; 729,900</div>
+        <div class="l_d"><a href="./desktop/macpro.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+    </div>
+
+    <div id="dis">
+        <div class="l_n">Studio Display</div>
+        <div class="l_p">
+            <img src="../images/mac/display/sd/1.png">
+            <img src="../images/mac/display/sd/2.jpeg">
+        </div>
+        <div class="l_price">&#8377; 159,900</div>
+        <div class="l_d"><a href="./display/sd.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+
+        <div class="l_n">Pro Display XDR</div>
+        <div class="l_p">
+            <img src="../images/mac/display/pro/1.jpeg">
+            <img src="../images/mac/display/pro/2.png">
+        </div>
+        <div class="l_price">&#8377; 449,900</div>
+        <div class="l_d"><a href="./display/pd.html">details</a></div>
+        <div class="button"><a href="/Frontend/card/card.html"><input type="button" value="Buy"></a></div>
+    </div>
+</body>
+
+</html>

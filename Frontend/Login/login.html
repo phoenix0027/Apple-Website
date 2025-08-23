@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0d0d0d, #1c1c1c);
+            color: #ddd;
+            font-family: "Segoe UI", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: #111;
+            padding: 40px 35px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 182, 193, 0.1);
+            width: 330px;
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .login-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(255, 182, 193, 0.15);
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #e9967a;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid #333;
+            background: #1b1b1b;
+            color: #ddd;
+            font-size: 15px;
+            transition: border 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid rosybrown;
+            box-shadow: 0 0 8px rgba(188, 143, 143, 0.5);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+            background: rosybrown;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #a05252;
+            transform: scale(1.03);
+        }
+
+        .extra-links {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .extra-links a {
+            color: rosybrown;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .extra-links a:hover {
+            color: #ffb6c1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="http://localhost:5000/login" method="POST">
+            <input type="text" name="username" placeholder="Enter Username" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="extra-links">
+            <p>Don’t have an account? <a href="/signup/signup.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

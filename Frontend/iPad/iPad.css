@@ -1,0 +1,285 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff6b6b, #ffcc5c, #4ecdc4, #1976D2);
+    border-radius: 50px;
+    background-size: 200% 200%;
+    animation: scrollbarColorChange 3s infinite linear;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #4ecdc4, #ffcc5c, #ff6b6b, #1976D2);
+}
+@keyframes scrollbarColorChange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #ffcc5c, #4ecdc4);
+    z-index: 9999;
+}
+
+#head {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+    color: #ffcc99;
+    font-size: larger;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+#head:hover {
+    background: rgba(0, 0, 0, 1);
+}
+#head .scrolling-text {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    border: 3px solid #ffcc99;
+    border-radius: 50px;
+    padding: 12px 25px;
+    animation: scrolling 30s linear infinite;
+}
+@keyframes scrolling {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(900%); }
+}
+@keyframes borderGlow {
+    0% { border-color: #ffcc99; box-shadow: 0 0 10px #ffcc99; }
+    50% { border-color: #ffaa77; box-shadow: 0 0 20px #ffaa77; }
+    100% { border-color: #ff9966; box-shadow: 0 0 30px #ff9966; }
+}
+h1 i {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ff9966;
+    animation: bounce 1.8s infinite ease-in-out;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+#head label {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffcc99;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.i_n {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 50px;
+    color: whitesmoke;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.i_n h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #ff9966, #ffaa77, #ffcc99);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInScale 1.5s ease-in-out, gradientShift 3s infinite alternate;
+}
+.i_n h1:hover {
+    text-shadow: 0px 0px 20px rgba(255, 153, 102, 0.8);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.i_n hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, #ff9966, #ffaa77, #ffcc99);
+    margin: 15px auto;
+    width: 50%;
+    animation: glowing 1.5s infinite alternate;
+}
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #ff9966; }
+    50% { box-shadow: 0 0 10px #ffaa77; }
+    100% { box-shadow: 0 0 15px #ffcc99; }
+}
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+#vid {
+    max-width: 100%;
+    height: auto;
+}
+hr {
+    color: rosybrown;
+    border: 1px solid rosybrown;
+    margin-top: 5px;
+}
+
+.slider {
+    border: 2px solid whitesmoke;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.slides img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.details {
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 4px 6px rgba(255, 255, 255, 0.1) inset;
+    font-family: 'Arial', sans-serif;
+    max-width: 500px;
+    margin: 50px;
+}
+.details h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #00aaff;
+    margin: 10px 0;
+}
+.details hr {
+    border: none;
+    height: 2px;
+    background: #555;
+    margin: 10px 0;
+}
+.details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.details:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 6px 8px rgba(255, 255, 255, 0.15) inset;
+}
+.details ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.details ul li:hover {
+    transform: translateX(5px);
+    color: #00ff99;
+}
+.details ul li strong { color: #ffcc00; }
+.details ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #00ff99;
+    font-size: 18px;
+}
+
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -10000;
+}
+
+.buy-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: black;
+    color: white; 
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+.buy-btn:hover {
+    background-color: #111;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}

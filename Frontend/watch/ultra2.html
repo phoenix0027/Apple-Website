@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ultra 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(90deg, #111, #1c1c1c);
+            color: #ffd369;
+            padding: 25px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+            background: #000;
+        }
+
+        .video video {
+            max-width: 90%;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+        }
+
+        #img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            background: #111;
+            padding: 40px 0;
+        }
+
+        #img img {
+            max-width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        #img img:hover {
+            transform: scale(1.03);
+        }
+
+        #details {
+            text-align: center;
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        #details div {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #fff;
+        }
+
+        #details img {
+            max-width: 150px;
+            margin: 20px 0;
+        }
+
+        #details sup {
+            font-size: 0.7rem;
+            color: #aaa;
+        }
+
+        #details i {
+            background: #1a1a1a;
+            color: #ffd369;
+            padding: 12px 15px;
+            border-radius: 10px;
+            font-size: 28px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 0 12px rgba(255, 211, 105, 0.2);
+        }
+
+        .sos {
+            background: #ff4d4d;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 50%;
+            padding: 15px 20px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(255, 77, 77, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Ultra 2</div>
+
+    <div class="video">
+        <video src="../videos/Ultra2.mp4" muted preload="auto" autoplay loop></video>
+    </div>
+
+    <div id="img">
+        <img src="../images/watch/ultra2/1.png">
+        <img src="../images/watch/ultra2/2.jpeg">
+        <img src="../images/watch/ultra2/3.jpg">
+    </div>
+
+    <div id="details">
+        <div>49 mm titanium case size</div>
+
+        <img src="../images/watch/1.png"><br>
+        Carbon-neutral combinations available<sup>1</sup><br><br>
+
+        <img src="../images/watch/2.png"><br>
+        Always-On Retina display • Up to 3,000 nits<br><br>
+
+        <i>S9</i><br>
+        S9 SiP • Double tap gesture • Faster on-device Siri<sup>^</sup><br>
+        Precision Finding for iPhone<sup>2</sup><br><br>
+
+        <i class="fa">&#xf08a;</i><br>
+        Blood Oxygen app<sup>3</sup> • ECG app<sup>4</sup><br>
+        Heart rate & rhythm notifications<sup>5</sup><br><br>
+
+        <i class="fa">&#xf110;</i><br>
+        Temperature sensing<sup>6</sup><br>
+        Cycle Tracking with retrospective ovulation estimates<sup>7</sup><br><br>
+
+        <span class="sos">SOS</span><br>
+        Emergency SOS<sup>8</sup> • Fall & Crash Detection<sup>8</sup><br>
+        International Emergency Calling<sup>9</sup> • Siren<br><br>
+
+        <i>100m</i><br>
+        Water resistant • Swimproof<sup>15</sup><br>
+        High-speed water sports • Recreational dive (40 m)<br><br>
+
+        <img src="../images/watch/3.png"><br>
+        Precision dual-frequency GPS • Cellular connectivity<sup>7</sup><br><br>
+
+        <i class="fa">&#xf240;</i><br>
+        Up to 36 hours<sup>16</sup> • Up to 72 hours (Low Power Mode)<sup>16</sup><br>
+        Fast charging<sup>17</sup><br>
+    </div>
+</body>
+
+</html>
